@@ -22,3 +22,5 @@ table.honorcode td, table.honorcode th { border-style: none; padding: 12px 15px;
 .old {
     color: #999;
 }
+
+.officehours .time { font-weight:bold; }
