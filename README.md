@@ -1,6 +1,6 @@
 # CSE 30151: Theory of Computing
 
-Spring 2024
+Spring 2025
 
 David Chiang, University of Notre Dame
 
