@@ -2,6 +2,26 @@ from tock import *
 import itertools
 import formulas
 
+class Tableau:
+    def __init__(self, data):
+        self.data = data
+    def _repr_html_(self):
+        html = []
+        html.append('''
+        <style>
+        table { font-family: monospace; border-collapse: collapse; }
+        td { border: 1px solid #999999; padding: 0.5rem; text-align: center; }
+        </style>
+        ''')
+        html.append('<table>')
+        for row in self.data:
+            html.append('  <tr>')
+            for cell in row:
+                html.append(f'    <td>{cell}</td>')
+            html.append('  </tr>')
+        html.append('</table>')
+        return ''.join(html)
+
 def make_tableau(path, t):
     """Construct the tableau of size (t+1) x (t+4) for the given path."""
     if len(path) > t+1:
@@ -18,7 +38,7 @@ def make_tableau(path, t):
     # Fill the rest of the tableau with copies of the last row.
     while len(table) < t+1:
         table.append(table[-1])
-    return Table(table, num_header_cols=0, num_header_rows=0)
+    return Tableau(table)
 
 def transitions(m):
     """Convert from Tock's internal format to tuples (q, a, r, b, d), where
@@ -175,24 +195,3 @@ def make_formula(m, w, t):
         phi_accept |= x[t,j,qf]
 
     return phi_cell & phi_start & phi_move & phi_accept
-
-if __name__ == "__main__":
-    m = read_csv("ntm-primes.csv")
-    w = ["1"]*4
-    t = 20
-    tableau = make_tableau(run(m, w).shortest_path(), t)
-    phi = make_formula(m, w, t)
-
-    asst = {x: False for x in phi.vars()}
-    for (i, row) in enumerate(tableau.rows):
-        for (j, cell) in enumerate(row):
-            asst[f'x[{i},{j},{cell}]'] = True
-    print(phi.evaluate(asst))
-
-    import random
-    for trial in range(10):
-        asst = {x: random.choice([False, True]) for x in phi.vars()}
-        for (i, row) in enumerate(tableau.rows):
-            for (j, cell) in enumerate(row):
-                asst[f'x[{i},{j},{cell}]'] = True
-        print(phi.evaluate(asst))

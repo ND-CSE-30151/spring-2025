@@ -122,10 +122,3 @@ def conjoin(*args):
 
 def var(x):
     return Formula("var", [x])
-
-if __name__ == "__main__":
-    phi = (var('x1') | var('x2')) & var('x3')
-    print(phi)
-    print(phi.pretty())
-    print(phi.vars())
-    print(phi.satisfying_asst())
