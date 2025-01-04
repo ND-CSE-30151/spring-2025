@@ -75,28 +75,28 @@
 <title>q1r3&#45;&gt;q2r1</title>
 <path fill="none" stroke="black" d="M249.61,-95.7C210.56,-76.18 139.45,-40.62 101.84,-21.82"/>
 <polygon fill="black" stroke="black" points="97.64,-19.72 103.12,-19.94 98.78,-20.29 102.11,-21.95 102.11,-21.95 102.11,-21.95 98.78,-20.29 101.1,-23.97 97.64,-19.72"/>
-<text text-anchor="middle" x="226.64" y="-87.08" font-family="Monospace" font-size="9.00">1</text>
+<text text-anchor="middle" x="224.64" y="-87.08" font-family="Monospace" font-size="9.00">1</text>
 </g>
 <!-- q2r1&#45;&gt;q1r2 -->
 <g id="edge5" class="edge">
 <title>q2r1&#45;&gt;q1r2</title>
 <path fill="none" stroke="black" d="M86.59,-18.99C103.2,-35.6 137.59,-69.99 158.84,-91.24"/>
 <polygon fill="black" stroke="black" points="162.3,-94.7 157.17,-92.75 161.39,-93.79 158.76,-91.16 158.76,-91.16 158.76,-91.16 161.39,-93.79 160.36,-89.57 162.3,-94.7"/>
-<text text-anchor="middle" x="86.64" y="-22.07" font-family="Monospace" font-size="9.00">1</text>
+<text text-anchor="middle" x="86.64" y="-25.07" font-family="Monospace" font-size="9.00">1</text>
 </g>
 <!-- q2r2&#45;&gt;q1r3 -->
 <g id="edge6" class="edge">
 <title>q2r2&#45;&gt;q1r3</title>
 <path fill="none" stroke="black" d="M186.59,-18.99C203.2,-35.6 237.59,-69.99 258.84,-91.24"/>
 <polygon fill="black" stroke="black" points="262.3,-94.7 257.17,-92.75 261.39,-93.79 258.76,-91.16 258.76,-91.16 258.76,-91.16 261.39,-93.79 260.36,-89.57 262.3,-94.7"/>
-<text text-anchor="middle" x="186.64" y="-22.07" font-family="Monospace" font-size="9.00">1</text>
+<text text-anchor="middle" x="186.64" y="-25.07" font-family="Monospace" font-size="9.00">1</text>
 </g>
 <!-- q2r3&#45;&gt;q1r1 -->
 <g id="edge7" class="edge">
 <title>q2r3&#45;&gt;q1r1</title>
 <path fill="none" stroke="black" d="M257.46,-19.17C220.87,-37.47 142.08,-76.86 101.81,-97"/>
 <polygon fill="black" stroke="black" points="97.71,-99.04 101.18,-94.8 98.86,-98.47 102.18,-96.81 102.18,-96.81 102.18,-96.81 98.86,-98.47 103.19,-98.82 97.71,-99.04"/>
-<text text-anchor="middle" x="226.64" y="-22.07" font-family="Monospace" font-size="9.00">1</text>
+<text text-anchor="middle" x="224.64" y="-25.07" font-family="Monospace" font-size="9.00">1</text>
 </g>
 </g>
 </svg>

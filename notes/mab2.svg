@@ -62,7 +62,7 @@
 <title>q2r2&#45;&gt;q1r3</title>
 <path fill="none" stroke="black" d="M186.59,-18.99C203.2,-35.6 237.59,-69.99 258.84,-91.24"/>
 <polygon fill="black" stroke="black" points="262.3,-94.7 257.17,-92.75 261.39,-93.79 258.76,-91.16 258.76,-91.16 258.76,-91.16 261.39,-93.79 260.36,-89.57 262.3,-94.7"/>
-<text text-anchor="middle" x="186.64" y="-22.07" font-family="Monospace" font-size="9.00">1</text>
+<text text-anchor="middle" x="186.64" y="-25.07" font-family="Monospace" font-size="9.00">1</text>
 </g>
 <!-- q2r3 -->
 <g id="node7" class="node">
